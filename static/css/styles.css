@@ -1,0 +1,47 @@
+.color-background {
+    background-color: #DED3BE;
+}
+
+
+.color-button {
+    background-color: #252525;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+.color-button:hover {
+    background-color: black;
+}
+
+
+
+.email-link {
+    color: #252525;
+    font-size: 25px;
+}
+.email-link:hover {
+    color: black;
+}
+
+
+
+.carousel-item .d-flex img {
+    width: 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 10px;
+    transition: transform 5s ease; /* Cambia 5s a la duración que prefieras */
+
+}
+
+
+.card {
+  width: calc(100% + 40px); /* O el ancho que desees */
+}
+
+.card-padding-col {
+    margin-left: 20px;
+    margin-right: 20px;
+}
