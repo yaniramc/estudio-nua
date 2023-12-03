@@ -16,6 +16,17 @@
 }
 
 
+.color-link {
+    color: #DED3BE;
+}
+.color-link:hover {
+    color: white;
+}
+
+
+.color-p-footer {
+    color: #DED3BE;
+}
 
 .email-link {
     color: #252525;
@@ -44,4 +55,9 @@
 .card-padding-col {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+
+.color-footer {
+    background-color: #252525;
 }
