@@ -1,0 +1,833 @@
+/* ==================== */
+/* 🎨 PALETAS Y FONDOS */
+/* ==================== */
+
+.bg-hero {
+    background-color: #f0ede9;
+}
+
+.bg-sobre {
+    background-color: #f4f1ee;
+}
+
+.bg-proyectos {
+    background-color: #ffffff;
+}
+
+.bg-resenas {
+    background-color: #eae6e2;
+}
+
+.bg-footer {
+    background-color: #fdfbf8;
+}
+
+
+/* ============== */
+/* 🔤 TIPOGRAFÍA  */
+/* ============== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f3ed;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* =============== */
+/* 🧱 ESTRUCTURA   */
+/* =============== */
+
+header {
+    background-color: #f0e8dd;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-left a,
+.nav-right a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-left a::after,
+.nav-right a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #1a1a1a;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav-left a:hover::after,
+.nav-right a:hover::after {
+  width: 100%;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #1a1a1a;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+
+/* ============== */
+/* 🔲 LOGO CENTRO */
+/* ============== */
+
+.logo-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-desktop img {
+  height: 60px;
+}
+
+/* ====================== */
+/* 🍔 BOTÓN HAMBURGUESA  */
+/* ====================== */
+
+.hamburger {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+.hamburger-logo {
+  height: 32px;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger-icon span {
+  width: 25px;
+  height: 2px;
+  background-color: #1a1a1a;
+}
+
+
+/* ==================== */
+/* 🖼️ HERO BANNER TEXT */
+/* ==================== */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('/src/image/banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.hero-content {
+    z-index: 2;
+    text-align: center;
+    padding-bottom: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    max-width: 90%;
+}
+
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    gap: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #1a1a1a;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: #000000; /* un poco más fuerte al pasar el mouse */
+}
+
+
+.sobre-nosotros {
+    padding: 4rem 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre-nosotros h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.proyectos {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.proyectos blockquote {
+    font-style: italic;
+    max-width: 600px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+}
+
+.resenas {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+
+
+
+/* Responsive MOVIL */
+@media (max-width: 768px) {
+
+    .galeria-mini img {
+        width: 100%;
+        height: auto;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .logo-desktop {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0e8dd;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nav-links .logo-desktop {
+    display: flex;
+    margin: 10px 0;
+  }
+
+  .nav-links .logo-desktop img {
+    height: 50px;
+  }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+.section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+.ceramica-encargo {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.ceramica-encargo .contenido {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.ceramica-encargo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ceramica-encargo p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.galeria-ceramica {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.galeria-ceramica img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.resenas {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.resenas h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.resenas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.resena {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.resena p {
+    font-style: italic;
+}
+
+.resena .autor {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.galeria-mini {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.galeria-mini img {
+    width: 320px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.galeria-mini img:hover {
+    transform: scale(1.05);
+}
+
+
+.renders {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.renders h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.renders-descripcion {
+    max-width: 900px; /* antes era 700px */
+    margin: 0 auto 2.5rem;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.renders-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.renders-grid img {
+    width: 320px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.renders-grid img:hover {
+    transform: scale(1.03);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.footer {
+    padding: 4rem 2rem 2rem;
+    color: #1a1a1a;
+    background-color: #fdfbf8;
+    font-size: 0.95rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer-contacto,
+.footer-redes {
+    min-width: 200px;
+}
+
+.footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+
+.footer {
+    background-color: #3b3a36; /* gris oscuro cálido */
+    padding: 4rem 2rem 2rem;
+    color: #ffffff; /* texto blanco */
+    font-size: 0.95rem;
+}
+
+
+.footer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-logo img {
+    width: 180px;
+    filter: none; /* asegúrate de mantenerlo visible en fondo claro */
+}
+
+.footer-contacto h3,
+.footer-redes h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #eae6e2;
+}
+
+.footer-contacto a,
+.footer-redes a {
+    color: #eae6e2;
+}
+
+.footer-contacto a:hover,
+.footer-redes a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icons img {
+    filter: brightness(0) invert(1); /* convierte iconos a blanco si eran negros */
+}
+
+.social-icons a:hover img {
+    transform: scale(1.15);
+}
+
+.footer-bottom {
+    color: #eae6e2;
+}
+
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1.5rem;
+    animation: scrollCarousel 20s linear infinite;
+    object-fit: cover;
+    border-radius: 10px;
+    width: max-content;
+}
+
+.carousel-track img {
+    width: 500px; /* puedes subirlo sin problema */
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes scrollCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive: 2 o 1 imagen según ancho */
+@media (max-width: 1024px) {
+    .carousel-track img {
+        width: calc((100% - 1.5rem) / 2);
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-track img {
+        width: 100%;
+    }
+}
+
+
+.servicios {
+    background-color: #f3e9e5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #3d3d3d;
+}
+
+.servicios-descripcion {
+    font-size: 18px;
+    color: #6b6b6b;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.servicio {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+.servicio h3 {
+    color: #b1785a;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    color: #4a4a4a;
+    font-size: 16px;
+}
+
+.icono-servicio {
+    margin-bottom: 15px;
+}
+
+.icono-servicio svg {
+    width: 40px;
+    height: 40px;
+    stroke: #b1785a;
+}
+
+
+/* -------------------------------- */
+/* 📱 Estilos responsive generales */
+/* -------------------------------- */
+
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-left, .nav-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .galeria-mini img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .hero-content {
+        padding: 30px 20px;
+    }
+
+    .servicios-descripcion,
+    .renders-descripcion,
+    .sobre-nosotros p,
+    .ceramica-encargo p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .servicio {
+        margin-bottom: 30px;
+    }
+
+    .resenas-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .galeria-ceramica img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-track img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-contacto, .footer-redes {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar img {
+        width: 120px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .servicio h3 {
+        font-size: 18px;
+    }
+
+    .servicio p {
+        font-size: 15px;
+    }
+}

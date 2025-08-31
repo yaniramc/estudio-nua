@@ -1,287 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Estudio Deco Visual</title>
-    <link rel="icon" href="static/img/logo-sin-letras.svg" type="image/svg+xml">
-
-    <link rel="stylesheet" href="static/css/styles.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous">
-    </script>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Estudio Nua</title>
+    <link rel="stylesheet" href="style/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand px-5" href="index.html">
-                <img src="static/img/logo-horizontal.svg" width="150%" height="150%" alt="logo-horizontal.svg">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse mx-5" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre-nosotros">SOBRE NOSOTROS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicios">SERVICIOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">PROYECTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">CONTACTO</a>
-                    </li>
-                </ul>
+<header id="inicio" class="hero">
+    <nav class="navbar">
+        <div class="nav-left">
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+            </ul>
+        </div>
+
+        <div class="logo">
+            <img src="image/LOGO-NEGATIVO-GRANDE.svg" alt="Logo Nua"/>
+        </div>
+
+        <div class="nav-right">
+            <ul>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#renders">RENDERS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </div>
+
+
+        <div class="hamburger" id="hamburger">
+            <img src="image/LOGO-NEGATIVO-GRANDE.svg" alt="Logo Nua" class="hamburger-logo"/>
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
+
     </nav>
+
+
 </header>
 
-
-<img src="static/img/foto-portada.jpg" width="100%" alt="foto-portada.jpg">
-
-
-<section id="sobre-nosotros">
-    <div class="container pt-5 pb-5">
-        <div class="row d-flex justify-content-center">
-            <div class="col-sm-12 text-center">
-                <h2 class="py-3">SOBRE NUESTRO ESTUDIO</h2>
-                <p>Bienvenidos a Estudio Deco Visual, un crisol de innovación y creatividad en el mundo del diseño
-                    arquitectónico y la decoración de interiores. Somos especialistas en transformar ideas en renderizados de imágenes
-                    fotorrealistas que capturan la esencia y el potencial de cada espacio.
-                </p>
-                <p>Nuestra misión es brindar soluciones visuales a empresas de construcción, arquitectos, diseñadores de interiores e
-                    inmobiliarias a visualizar y promocionar sus proyectos con el mayor realismo posible. En Estudio Deco
-                    Visual, cada render es una obra de arte, meticulosamente elaborada para reflejar cada detalle y
-                    textura, asegurando que cada proyecto se presente en su máximo esplendor.
-                </p>
-                <p>
-                    Pero no solo nos detenemos en la visualización arquitectónica con modelados 3D. Nuestro servicio de decoración de interiores se
-                    dedica a crear ambientes que no solo se vean bien, sino que también se sientan como un hogar.
-                    Trabajamos de la mano con nuestros clientes para entender y plasmar su visión, creando espacios que
-                    combinan funcionalidad, estilo y confort.
-                </p>
-                <p>
-                    En Estudio Deco Visual, creemos firmemente en el poder de una buena renderización para transformar
-                    espacios y experiencias. Nos esforzamos por convertirnos en unos de los principales estudios de
-                    renderización y decoración de interiores, para ello, tenemos especialistas en renderización, modelado 3D e interiorismo.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="servicios" class="color-background">
-    <div class="container py-5">
-        <h2 class="py-3 text-center">NUESTROS SERVICIOS</h2>
-        <div class="row g-4">
-            <div class="col-md-12 col-lg-4">
-                <div class="card h-100 shadow-lg">
-                    <img src="static/img/modelado2dy3d.jpg" class="card-img-top" alt="modelado2dy3d.jpg">
-                    <div class="card-body">
-                        <h5 class="card-title">MODELADO 3D DE ESTANCIAS</h5>
-                        <p class="card-text">Transformamos ideas en modelos detallados y precisos. Ya sea para proyectos de interiores
-                            residenciales o comerciales, creamos modelados 3D exactos que ayudan a nuestros
-                            clientes a visualizar sus espacios antes de su ejecución.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12 col-lg-4">
-                <div class="card h-100 shadow-lg">
-                    <img src="static/img/render.jpg" class="card-img-top" alt="render.jpg">
-                    <div class="card-body">
-                        <h5 class="card-title">RENDERIZADOS DE INTERIORES</h5>
-                        <p class="card-text">
-                            Con un enfoque en la estética y la funcionalidad, ofrecemos servicios de renderizado de alta
-                            calidad que dan vida a los espacios interiores. Nuestros renderizados de imágenes
-                            fotorrealistas son herramientas esenciales para proporcionar una visión clara y tangible del proyecto que se realizará.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12 col-lg-4">
-                <div class="card h-100 shadow-lg">
-                    <img src="static/img/diseño-de-interiores.jpg" class="card-img-top" alt="diseño-de-interiores.jpg">
-                    <div class="card-body">
-                        <h5 class="card-title">DISEÑO DE DECORACIÓN DE INTERIORES</h5>
-                        <p class="card-text">Nuestro servicio de diseño de interiores se centra en crear ambientes que
-                            reflejen el estilo y las necesidades de nuestros clientes. Desde la selección de colores y
-                            materiales hasta la disposición de muebles y accesorios, trabajamos en estrecha colaboración
-                            con nuestros clientes para crear espacios que no solo sean estéticamente agradables, sino
-                            también funcionales y acogedores.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="proyectos">
-    <div class="container py-5">
-        <h2 class="py-3 text-center">PROYECTOS DE DECORACIÓN DE INTERIORES REALIZADOS</h2>
-        <div id="miCarrusel" class="carousel slide shadow-lg" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex">
-                        <img src="static/img/chalet-independiente1.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente1.jpg">
-                        <img src="static/img/chalet-independiente2.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente2.jpg">
-                        <img src="static/img/chalet-independiente3.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente3.jpg">
-                        <img src="static/img/chalet-independiente4.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente4.jpg">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex">
-                        <img src="static/img/chalet-independiente5.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente5.jpg">
-                        <img src="static/img/chalet-independiente6.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente6.jpg">
-                        <img src="static/img/chalet-independiente7.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente7.jpg">
-                        <img src="static/img/chalet-independiente8.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente8.jpg">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex">
-                        <img src="static/img/chalet-independiente9.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente9.jpg">
-                        <img src="static/img/chalet-independiente10.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente10.jpg">
-                        <img src="static/img/chalet-independiente11.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente11.jpg">
-                        <img src="static/img/chalet-independiente12.jpg" class="d-block w-25 size-img-carousel"
-                             alt="chalet-independiente12.jpg">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex">
-                        <img src="static/img/apartamento-independiente-costa1.jpg" class="d-block w-25 size-img-carousel"
-                             alt="apartamento-independiente-costa1.jpg">
-                        <img src="static/img/apartamento-independiente-costa2.jpg" class="d-block w-25 size-img-carousel"
-                             alt="apartamento-independiente-costa2.jpg">
-                        <img src="static/img/apartamento-independiente-costa3.jpg" class="d-block w-25 size-img-carousel"
-                             alt="apartamento-independiente-costa3.jpg">
-                        <img src="static/img/apartamento-independiente-costa4.jpg" class="d-block w-25 size-img-carousel"
-                             alt="apartamento-independiente-costa4.jpg">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex">
-                        <img src="static/img/apartamento-independiente1.jpg" class="d-block w-25 size-img-carousel"
-                             alt="apartamento-independiente1.jpg">
-                        <img src="static/img/apartamento-independiente2.jpg" class="d-block w-25 size-img-carousel"
-                             alt="apartamento-independiente2.jpg">
-                        <img src="static/img/apartamento-independiente3.jpg" class="d-block w-25 size-img-carousel"
-                             alt="apartamento-independiente3.jpg">
-                        <img src="static/img/apartamento-independiente4.jpg" class="d-block w-25 size-img-carousel"
-                             alt="apartamento-independiente4.jpg">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex">
-                        <img src="static/img/apartamento-independiente5.jpg" class="d-block w-25 size-img-carousel"
-                             alt="apartamento-independiente5.jpg">
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel"
-                    data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel"
-                    data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-</section>
-
-
-<section id="contacto" class="color-background">
-    <div class="container py-5">
-        <div class="row d-flex justify-content-center">
-            <h2>CONTÁCTAME</h2>
-            <div class="col-md-12 col-lg-6">
-                <h5 class="py-3">¿Necesitas un render o un diseño de interior? Hablemos por WhatsApp.</h5>
-                <a class="color-button" href="https://wa.me/34636872792/?text=Hola,%20¿Cómo%20podemos%20ayudarte?"
-                   role="button" target="_blank">Enviar un WhatsApp</a>
-            </div>
-            <div class="col-md-12 col-lg-6">
-                <h5 class="py-3">También puedes mandarme un email a:</h5>
-                <a href="mailto:estudiodecovisual@gmail.com" class="email-link">estudiodecovisual@gmail.com</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="container py-5 text-center">
-        <h2>SÍGUENOS EN NUESTRAS REDES SOCIALES</h2>
-        <p class="py-3">Si quieres inspirarte y estar informada/o de todos nuestros consejos y proyectos síguenos
-            en nuestras redes sociales. También podrás preguntarme sobre cualquier duda que tengas sobre consejos
-            para tu casa y estaremos encantados de poder ayudarte en todo lo posible.
+<main>
+    <section id="nosotros" class="sobre-nosotros section">
+        <h2>SOBRE NOSOTROS</h2>
+        <p>
+            En Estudio Nua, nos especializamos en crear espacios interiores elegantes y funcionales residenciales y
+            comerciales. Nuestro enfoque se basa en la simplicidad, los materiales naturales y una atención meticulosa
+            al detalle.
         </p>
-        <a href="https://www.instagram.com/estudiodecovisual/"><img src="static/img/instagram.png" alt="icon-instagram" width="50px" class="mx-2"></a>
-        <a href="https://www.pinterest.es/EstudioDecoVisual/"><img src="static/img/pinterest.png" alt="icon-pinterest" width="50px" class="mx-2"></a>
-        <a href="https://www.behance.net/yaniramartincamara"><img src="static/img/behance.png" alt="icon-behance" width="50px" class="mx-2"></a>
-    </div>
-</section>
+    </section>
 
-<footer class="color-footer text-white">
-    <div class="container py-5">
-        <div class="row py-3">
-            <div class="col-md-12 col-lg-2 d-flex justify-content-center">
-                <img src="static/img/logo-blanco.svg" alt="logo-blanco.svg" width="50%">
+    <section id="servicios" class="servicios section">
+        <h2>SERVICIOS</h2>
+        <p class="servicios-descripcion">
+            En Estudio Nua diseñamos espacios interiores con alma. Ofrecemos soluciones completas o parciales, tanto
+            para hogares como para marcas o empresas.
+        </p>
+
+        <div class="servicios-grid">
+
+            <!-- Servicio 1: Diseño Residencial -->
+            <div class="servicio">
+                <div class="icono-servicio">
+                    <!-- Ícono casa -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#b1785a"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 11L12 2l9 9M4 10v10a2 2 0 0 0 2 2h4V14h4v8h4a2 2 0 0 0 2-2V10"/>
+                    </svg>
+                </div>
+                <h3>Diseño Residencial</h3>
+                <p>Reformas y diseño de interiores para hogares cálidos, funcionales y estéticamente equilibrados.</p>
             </div>
-            <div class="col-md-12 col-lg-2 py-5 d-flex justify-content-center">
-                <h5><a href="#sobre-nosotros" class="text-decoration-none color-link">SOBRE NOSOTROS</a></h5>
+
+            <!-- Servicio 2: Diseño Comercial -->
+            <div class="servicio">
+                <div class="icono-servicio">
+                    <!-- Ícono copa sobre barra / negocio -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#b1785a"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 2h8v4a4 4 0 1 1-8 0V2zM4 22h16M12 10v12"/>
+                    </svg>
+                </div>
+                <h3>Diseño Comercial</h3>
+                <p>Diseño de espacios comerciales que refuerzan tu identidad de marca y mejoran la experiencia del
+                    cliente.</p>
             </div>
-            <div class="col-md-12 col-lg-2 py-5 d-flex justify-content-center">
-               <h5><a href="#servicios" class="text-decoration-none color-link">SERVICIOS</a></h5>
-            </div>
-             <div class="col-md-12 col-lg-2 py-5 d-flex justify-content-center">
-                  <h5><a href="#proyectos" class="text-decoration-none color-link">PROYECTOS</a></h5>
-            </div>
-            <div class="col-md-12 col-lg-2 py-5 d-flex justify-content-center">
-                <h5><a href="#contacto" class="text-decoration-none color-link">CONTACTO</a></h5>
+
+            <!-- Servicio 3: Renders Profesionales -->
+            <div class="servicio">
+                <div class="icono-servicio">
+                    <!-- Ícono cámara -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#b1785a"
+                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3l2-3h6l2 3h3a2 2 0 0 1 2 2z"/>
+                        <circle cx="12" cy="13" r="4"/>
+                    </svg>
+                </div>
+                <h3>Renders Profesionales</h3>
+                <p>Visualizaciones realistas para particulares y empresas. Incluidos en proyectos completos o como
+                    servicio independiente.</p>
             </div>
         </div>
-        <hr>
-        <p class="pt-2 pb-2 text-center color-p-footer">Página diseñada por Yanira Martín - Desarrolladora Web y Visualizer 3D.</p>
+    </section>
+
+
+    <section id="proyectos" class="proyectos bg-resenas">
+        <h2>PROYECTOS</h2>
+        <div class="galeria-mini">
+            <img src="image/render1.png" alt="Render 1">
+            <img src="image/render2.png" alt="Render 2">
+            <img src="image/render4.png" alt="Render 4">
+            <img src="image/render3.png" alt="Render 3">
+            <img src="image/render5.png" alt="Render 5">
+        </div>
+    </section>
+
+    <section id="renders" class="renders section">
+        <h2>RENDERS</h2>
+
+        <p class="renders-descripcion">
+            Todos nuestros proyectos incluyen renders realistas que ayudan al cliente a visualizar el resultado final.
+            También realizamos renders por encargo para estudios, marcas o empresas que necesiten representar espacios o
+            productos de forma profesional.
+        </p>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <img src="image/render6.png" alt="Render 6"/>
+                <img src="image/render7.png" alt="Render 7"/>
+                <img src="image/render8.png" alt="Render 8"/>
+                <img src="image/render9.png" alt="Render 9"/>
+                <img src="image/render10.png" alt="Render 10"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="resenas bg-resenas">
+        <h2>RESEÑAS</h2>
+        <div class="resenas-grid">
+            <div class="resena">
+                <p>“Cada detalle fue perfecto. El equipo de Estudio Nua entendió exactamente lo que buscábamos y logró
+                    crear un ambiente cálido y sofisticado en nuestro hogar.”</p>
+                <span class="autor">— Mariana R.</span>
+            </div>
+            <div class="resena">
+                <p>“Encargamos una serie de jarrones personalizados para nuestro local y no podríamos estar más felices.
+                    Son piezas únicas, con mucho carácter y acabados impecables.”</p>
+                <span class="autor">— Tomás y Lucía</span>
+            </div>
+            <div class="resena">
+                <p>“Me sorprendió la dedicación con la que trabajan. Desde el primer contacto hasta la entrega final,
+                    todo fue cercano, profesional y lleno de buen gusto.”</p>
+                <span class="autor">— Isabel G.</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer id="footer" class="footer bg-footer">
+    <div class="footer-wrapper">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="image/LOGO-POSITIVO.svg" alt="Estudio Nua Logo">
+            </div>
+
+            <div id="contacto" class="footer-contacto">
+                <h3>Contacto</h3>
+                <p><a href="mailto:info.estudionua@gmail.com">info.estudionua@gmail.com</a></p>
+                <p><a href="tel:+34636872792">636 872 792</a></p>
+            </div>
+
+            <div class="footer-redes">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/estudionua.design" target="_blank" aria-label="Instagram">
+                        <!-- Ícono SVG Instagram negro -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#eae6e2"
+                             viewBox="0 0 24 24">
+                            <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 1.5h8.5A5.251 5.251 0 0 1 21 8.75v6.5a5.251 5.251 0 0 1-5.25 5.25h-8.5A5.251 5.251 0 0 1 3 15.25v-6.5A5.251 5.251 0 0 1 7.75 3.5zm8.75 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 1.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Estudio Nua. Todos los derechos reservados.</p>
+        </div>
     </div>
 </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous">
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  });
 </script>
 </body>
 </html>
+
+
